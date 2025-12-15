@@ -1,3 +1,268 @@
 * {
-  font-family: "Libre Baskerville", serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
+
+.bg-navbar {
+  background-color: #acb087;
+}
+.logo {
+  width: 50px;
+}
+.navbar-brand,
+.nav-link,
+.dropdown-item,
+#head,
+p {
+  font-family: "Montserrat", sans-serif;
+  color: #95714f;
+}
+h2 {
+  font-family: "Roboto", sans-serif;
+  color: #4caf8f;
+}
+.active {
+  font-weight: bold;
+  border-bottom: 2px solid #a47764ff;
+}
+.navbar-nav a:hover {
+  border-bottom: 2px solid #a47764ff;
+}
+.carousel-caption,
+.carousel-item {
+  background: rgba(0, 0, 0, 0.3);
+  color: black;
+}
+
+/* Make carousel images display at a consistent size */
+.carousel-item img {
+  width: 100%;
+  height: 500px; /* adjust as needed */
+  object-fit: cover;
+}
+.container {
+  text-align: center;
+}
+
+/* About us  */
+.content {
+  background-color: #fbf5d1;
+  padding-bottom: 20px;
+}
+#head {
+  text-align: center;
+}
+#first,
+#second,
+#third,
+#forth {
+  font-family: "Roboto", sans-serif;
+}
+.container-box h2,
+.container-box p {
+  margin-left: 65px;
+}
+
+/* footer  */
+.footer {
+  background-color: #fbf5d1;
+  color: #333;
+  padding: 40px 0 20px;
+  font-family: "Montserrat", sans-serif;
+}
+
+.footer-container {
+  width: 90%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 30px;
+}
+
+.footer-box h3 {
+  font-size: 18px;
+  margin-bottom: 15px;
+  color: #4caf8f;
+}
+
+.footer-box p {
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.footer-box ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-box ul li {
+  margin-bottom: 10px;
+}
+
+.footer-box ul li a {
+  text-decoration: none;
+  color: #333;
+  font-size: 14px;
+}
+
+.footer-box ul li a:hover {
+  color: #4caf8f;
+}
+
+.footer-bottom {
+  text-align: center;
+  border-top: 1px solid #ddd;
+  margin-top: 30px;
+  padding-top: 15px;
+  font-size: 13px;
+  color: #777;
+}
+
+/* find your routine  
+.cards {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 10px;
+}  */
+
+/* sidebar 
+.sidebar {
+  width: 250px;
+  height: 400px;
+  background-color: #f4f4f4;
+  padding: 20px;
+  position: sticky;
+  top: 100px;
+}
+.sidebar a {
+  text-decoration: none;
+  display: block;
+  padding: 10px 0;
+}
+.content {
+  flex: 1;
+  padding: 20px;
+  background-color: #fff;
+}
+.container-box {
+  width: 90%;
+  display: flex;
+  margin: 0 auto;
+} */
+
+/* find-your-routine css 
+body {
+  height: 60vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-emphasis: center;
+  background-color: rgb(162, 164, 100);
+}
+.container1 {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  height: 200px;
+  gap: 16px;
+  transition: 0.3s;
+}
+.container1 li {
+  position: relative;
+  overflow: hidden;
+  flex: 0 0 80px;
+  border-radius: 50px;
+  cursor: pointer;
+  border-radius: 10px;
+  border: 1.2px solid white;
+  box-shadow: 5px 10px 15px rgba(0, 0, 0, 0.4),
+    -2px -5px 10px rgba(0, 0, 0, 0.1);
+}
+.container1 li img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  translate: -50% -50px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.container1 li,
+.container1 li img {
+  transition: 0.3s;
+}
+.container1 li .skin {
+  transition: 1.5s ease;
+}
+.container1 span {
+  text-align: center;
+  width: 75%;
+}
+.container1 h2 {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 4px;
+  margin-bottom: 3px;
+  white-space: nowrap;
+  color: #f4f4f4;
+}
+.container1 p {
+  color: #f4f4f4;
+  font-size: 10px;
+  width: 100%;
+}
+.container1 li .skin {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+  color: #f4f4f4;
+  padding: 15px;
+  background: linear-gradient(
+    0deg,
+    rgba(0 0 0 / 70%) 10%,
+    rgba(255 255 255 / 0%) 100%
+  );
+  opacity: 0;
+  visibility: hidden;
+}
+.container1:hover {
+  gap: 0;
+}
+
+.container1 li .skin span {
+  position: absolute;
+  z-index: 3;
+  left: 50%;
+  bottom: 0px;
+  translate: -50%;
+  scale: 0.85;
+  visibility: hidden;
+  opacity: 0;
+}
+.container1 li:hover {
+  flex: 0 1 260px;
+  scale: 1.1;
+  z-index: 10;
+  opacity: 1;
+}
+.container1 li img {
+}
+.container1 li:hover .skin {
+  opacity: 1;
+  visibility: visible;
+}
+.container1 li:hover span {
+  scale: 1;
+  opacity: 1;
+  visibility: visible;
+} */
