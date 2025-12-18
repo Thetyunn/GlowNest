@@ -17,7 +17,8 @@
 p {
   font-family: "Montserrat", sans-serif;
   color: #95714f;
-  letter-spacing: normal;
+  letter-spacing: 1px;
+  line-height: 20px;
 }
 h2 {
   font-family: "Roboto", sans-serif;
@@ -40,6 +41,9 @@ h2 {
 #slider-t3 {
   color: #ddd;
   letter-spacing: 1px;
+}
+#s-text {
+  color: #fbf5d1;
 }
 
 /* Make carousel images display at a consistent size */
@@ -66,6 +70,7 @@ body {
 #third,
 #forth {
   font-family: "Roboto", sans-serif;
+  margin-top: 30px;
 }
 .container-box {
   margin-top: 30px;
