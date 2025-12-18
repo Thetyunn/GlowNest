@@ -17,6 +17,7 @@
 p {
   font-family: "Montserrat", sans-serif;
   color: #95714f;
+  letter-spacing: normal;
 }
 h2 {
   font-family: "Roboto", sans-serif;
@@ -34,6 +35,12 @@ h2 {
   background: rgba(0, 0, 0, 0.3);
   color: black;
 }
+#slider-t1,
+#slider-t2,
+#slider-t3 {
+  color: #ddd;
+  letter-spacing: 1px;
+}
 
 /* Make carousel images display at a consistent size */
 .carousel-item img {
@@ -46,7 +53,8 @@ h2 {
 }
 
 /* About us  */
-.content {
+.content,
+body {
   background-color: #fbf5d1;
   padding-bottom: 20px;
 }
@@ -59,9 +67,13 @@ h2 {
 #forth {
   font-family: "Roboto", sans-serif;
 }
+.container-box {
+  margin-top: 30px;
+}
 .container-box h2,
 .container-box p {
   margin-left: 65px;
+  margin-right: 65px;
 }
 
 /* footer  */

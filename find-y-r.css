@@ -33,6 +33,11 @@ body {
   align-items: flex-start;
   flex-wrap: wrap;
   gap: 10px;
+  margin-bottom: 30px;
+}
+.card-text {
+  letter-spacing: 1px;
+  font-size: 18px;
 }
 .btn {
   background-color: #acb087;
@@ -49,6 +54,8 @@ body {
 #sensi,
 #combi {
   margin-left: 65px;
+  letter-spacing: normal;
+  margin-right: 65px;
 }
 h2 {
   color: #4caf8f;

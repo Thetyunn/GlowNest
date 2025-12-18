@@ -25,6 +25,98 @@
 body {
   background-color: #fbf5d1;
 }
+
+/* review  */
+.reviews-section {
+  padding: 40px 20px;
+  text-align: center;
+  background: #fbf5d1;
+}
+
+.reviews-section h2 {
+  font-size: 2rem;
+  color: #333;
+}
+
+.subtitle {
+  color: #666;
+  margin-bottom: 30px;
+}
+
+.review-cards {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.review-card {
+  background: #acb087;
+  padding: 20px;
+  width: 280px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.review-card span {
+  display: block;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+.see-more-btn {
+  margin: 30px 0;
+  padding: 10px 30px;
+  background: #7fb3a6;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+}
+
+.review-form-section {
+  max-width: 420px;
+  margin: 40px auto;
+  padding: 25px;
+  background: #acb087;
+  border-radius: 14px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.review-form input,
+.review-form textarea,
+.review-form select {
+  width: 100%;
+  padding: 10px;
+  margin: 12px 0;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  outline: none;
+}
+
+/* Default button (disabled look) */
+.submit-btn {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 25px;
+  background: #cfded9; /* light dull color */
+  color: white;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+/* Button lights up when user types */
+.review-form:focus-within .submit-btn {
+  background: #7fb3a6; /* GlowNest green */
+}
+
+/* Optional hover */
+.submit-btn:hover {
+  opacity: 0.9;
+}
+
 /* footer  */
 .footer {
   background-color: #fbf5d1;

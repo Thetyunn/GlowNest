@@ -25,6 +25,81 @@
 body {
   background-color: #fbf5d1;
 }
+/* booking css  */
+.consultants-section {
+  padding: 40px 20px;
+  text-align: center;
+  background: #f9fdfc;
+}
+
+.consultants {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+/* Circle container */
+.img-box {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  overflow: hidden;
+  position: relative;
+  cursor: pointer;
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.12);
+}
+
+/* Doctor image */
+.img-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: 0.4s ease;
+}
+
+/* Overlay (hidden by default) */
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(127, 179, 166, 0.9);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+  text-align: center;
+  opacity: 0;
+  transition: 0.4s ease;
+}
+
+/* Hover effects */
+.img-box:hover img {
+  transform: scale(1.1);
+}
+
+.img-box:hover .overlay {
+  opacity: 1;
+}
+
+/* Button */
+.choose-btn {
+  margin-top: 12px;
+  padding: 6px 20px;
+  border-radius: 20px;
+  border: none;
+  background: white;
+  color: #7fb3a6;
+  font-size: 0.85rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.choose-btn:hover {
+  background: #f1f7f5;
+}
+
 /* footer  */
 .footer {
   background-color: #fbf5d1;
