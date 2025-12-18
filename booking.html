@@ -85,7 +85,7 @@
       </div>
     </nav>
 
-    <!-- booking  -->
+    <!-- consultants  -->
     <section class="consultants-section">
       <h3>Care Consultants</h3>
 
@@ -130,6 +130,76 @@
             </div>
           </div>
         </div>
+      </div>
+    </section>
+
+    <!-- services menu  -->
+    <section class="menu-container">
+      <div class="aesthetic-frame">
+        <div class="frame-inner">
+          <img
+            src="images/services.jpg"
+            alt="Skincare Treatment Menu"
+            class="menu-photo"
+          />
+
+          <div class="frame-label">
+            <span class="label-subtitle">GlowNest Signature</span>
+            <h3 class="label-title">Treatment Menu</h3>
+          </div>
+        </div>
+        <div class="accent-line"></div>
+      </div>
+    </section>
+
+    <!-- book now  -->
+    <section class="booking-section">
+      <div class="booking-card">
+        <div class="booking-header">
+          <h2>Reserve Your Glow</h2>
+          <p>Select your preferred specialist and time</p>
+        </div>
+
+        <form class="booking-form">
+          <div class="input-group">
+            <label for="doctor">Select Specialist</label>
+            <select id="doctor" name="doctor" required>
+              <option value="" disabled selected>Choose a Doctor</option>
+              <option value="dr-smith">Dr. Lily Aung</option>
+              <option value="dr-johnson">Dr. May Zin</option>
+              <option value="dr-johnson">Dr. Aung Min</option>
+            </select>
+          </div>
+
+          <div class="input-group">
+            <label for="treatment">Treatment Type</label>
+            <select id="treatment" name="treatment" required>
+              <option value="" disabled selected>Select Service</option>
+              <option value="facial">Personalized Facials</option>
+              <option value="laser">Fits & Firm IV Therapy</option>
+              <option value="peel">Body Contouring</option>
+              <option value="peel">Laser Fat Reduction</option>
+              <option value="peel">Skin Tightening</option>
+              <option value="peel">Spot Treatment</option>
+              <option value="peel">Nutrition & Lifestyle Consultation</option>
+              <option value="peel">I don't know yet</option>
+            </select>
+          </div>
+
+          <div class="row">
+            <div class="input-group">
+              <label for="date">Preferred Date</label>
+              <input type="date" id="date" name="date" required />
+            </div>
+
+            <div class="input-group">
+              <label for="time">Preferred Time</label>
+              <input type="time" id="time" name="time" required />
+            </div>
+          </div>
+
+          <button type="submit" class="book-btn">Book Now</button>
+        </form>
       </div>
     </section>
 
