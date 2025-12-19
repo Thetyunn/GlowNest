@@ -25,6 +25,11 @@
 body {
   background-color: #fbf5d1;
 }
+#head {
+  font-family: "Montserrat", sans-serif;
+  color: #4caf8f;
+  margin-bottom: 20px;
+}
 /* booking css  */
 .consultants-section {
   padding: 40px 20px;
@@ -113,7 +118,7 @@ body {
 
 /* Form Card */
 .booking-card {
-  background: #ffffff;
+  background: #dadfac;
   width: 100%;
   max-width: 450px;
   padding: 40px;

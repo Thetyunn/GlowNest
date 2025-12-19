@@ -1,0 +1,9 @@
+* {
+  font-family: "Montserrat", sans-serif;
+}
+.form-bg {
+  background-color: #59728b;
+}
+form {
+  border-radius: 5px;
+}

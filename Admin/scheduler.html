@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aesthetic Clinic Admin</title>
+    <style>
+      :root {
+        --sidebar-color: #2c3e50;
+        --accent-skin: #b5838d;
+        --bg-light: #f4f7f6;
+        --border: #e0e0e0;
+        --success: #81c784;
+      }
+
+      * {
+        box-sizing: border-box;
+        font-family: "Segoe UI", sans-serif;
+      }
+      body {
+        margin: 0;
+        display: flex;
+        height: 100vh;
+        background: var(--bg-light);
+      }
+
+      /* Sidebar */
+      .sidebar {
+        flex: 2;
+        background: var(--sidebar-color);
+        color: white;
+        padding: 20px 0;
+        display: flex;
+        flex-direction: column;
+      }
+
+      .sidebar h2 {
+        text-align: center;
+        font-size: 1.2rem;
+        margin-bottom: 30px;
+        color: var(--accent-skin);
+      }
+
+      .nav-item {
+        padding: 15px 25px;
+        cursor: pointer;
+        transition: 0.3s;
+        border-left: 4px solid transparent;
+      }
+
+      .nav-item:hover,
+      .nav-item.active {
+        background: #34495e;
+        border-left: 4px solid var(--accent-skin);
+      }
+
+      /* Main Content - Size 10 */
+      .main-content {
+        flex: 10;
+        padding: 30px;
+        overflow-y: auto;
+      }
+
+      /* Scheduler Components */
+      .header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 25px;
+      }
+
+      .btn-add {
+        background: var(--accent-skin);
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+
+      .calendar-grid {
+        display: grid;
+        grid-template-columns: 80px repeat(3, 1fr);
+        background: white;
+        border: 1px solid var(--border);
+        border-radius: 8px;
+      }
+
+      .col-header {
+        padding: 15px;
+        background: #fafafa;
+        font-weight: bold;
+        text-align: center;
+        border-bottom: 2px solid var(--border);
+        border-left: 1px solid var(--border);
+      }
+
+      .time-cell {
+        height: 100px;
+        border-bottom: 1px solid var(--border);
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        padding-top: 10px;
+        font-size: 0.8rem;
+        color: #7f8c8d;
+      }
+
+      .room-cell {
+        height: 100px;
+        border-bottom: 1px solid var(--border);
+        border-left: 1px solid var(--border);
+        padding: 5px;
+        position: relative;
+      }
+
+      /* Appointment Card */
+      .appt {
+        background: #e8f4fd;
+        border-left: 4px solid #3498db;
+        padding: 8px;
+        font-size: 0.85rem;
+        border-radius: 4px;
+        margin-bottom: 5px;
+      }
+
+      .appt.confirmed {
+        background: #e8f5e9;
+        border-left-color: var(--success);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="sidebar">
+      <h2>GLOWNEST</h2>
+      <div class="nav-item active" onclick="showPage('scheduler')">
+        📅 Scheduler
+      </div>
+      <div class="nav-item" onclick="showPage('patients')">
+        👥 Patient Records
+      </div>
+      <div class="nav-item" onclick="showPage('treatments')">✨ Treatments</div>
+      <div class="nav-item" onclick="showPage('inventory')">📦 Inventory</div>
+    </div>
+
+    <div class="main-content">
+      <div id="scheduler" class="page active">
+        <div class="header">
+          <h1>Daily Schedule</h1>
+          <button class="btn-add">+ New Appointment</button>
+        </div>
+
+        <div class="calendar-grid">
+          <div class="col-header" style="border-left: none">Time</div>
+          <div class="col-header">Room 1 (Laser)</div>
+          <div class="col-header">Room 2 (Inject)</div>
+          <div class="col-header">Room 3 (Consult)</div>
+
+          <div class="time-cell">09:00 AM</div>
+          <div class="room-cell">
+            <div class="appt"><b>Anna Smith</b><br />Laser Hair</div>
+          </div>
+          <div class="room-cell">
+            <div class="appt confirmed"><b>John Doe</b><br />Botox</div>
+          </div>
+          <div class="room-cell"></div>
+
+          <div class="time-cell">10:00 AM</div>
+          <div class="room-cell"></div>
+          <div class="room-cell">
+            <div class="appt"><b>Claire R.</b><br />Lip Filler</div>
+          </div>
+          <div class="room-cell">
+            <div class="appt confirmed">
+              <b>New Client</b><br />Consultation
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
